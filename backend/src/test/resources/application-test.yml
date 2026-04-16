@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:medflow_test;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+
+  flyway:
+    enabled: false
+
+app:
+  jwt:
+    secret: medflow-test-secret-key-with-at-least-thirty-two-characters
+    expiration-ms: 3600000
+  cors:
+    allowed-origins: http://localhost:5173,http://127.0.0.1:5173
+  ml-service:
+    base-url: http://localhost:8000
+    connect-timeout-ms: 2000
+    read-timeout-ms: 5000
+
+logging:
+  level:
+    org.hibernate.SQL: WARN
+    org.springframework.web: WARN
+    org.springframework.security: WARN
