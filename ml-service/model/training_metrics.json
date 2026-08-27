@@ -1,0 +1,30 @@
+{
+  "modelName": "MedFlow Educational Symptom Cause Model",
+  "modelType": "Two scikit-learn Logistic Regression pipelines",
+  "modelVersion": "synthetic-cause-logreg-v3",
+  "trainingRows": 5000,
+  "patternAccuracy": 0.902,
+  "causeAccuracy": 0.883,
+  "supportedPatterns": [
+    "ALLERGY_LIKE_PATTERN",
+    "GASTROINTESTINAL_PATTERN",
+    "GENERAL_UNSPECIFIED_PATTERN",
+    "MIGRAINE_LIKE_PATTERN",
+    "MUSCULOSKELETAL_PATTERN",
+    "RESPIRATORY_PATTERN",
+    "VIRAL_LIKE_PATTERN"
+  ],
+  "supportedCauses": [
+    "ACUTE_GASTROENTERITIS_LIKE",
+    "ALLERGIC_RHINITIS_LIKE",
+    "BRONCHITIS_AIRWAY_IRRITATION_LIKE",
+    "COMMON_COLD_LIKE",
+    "FLU_LIKE_VIRAL_ILLNESS",
+    "FOOD_RELATED_STOMACH_UPSET_LIKE",
+    "JOINT_INFLAMMATION_LIKE",
+    "MIGRAINE_LIKE_HEADACHE",
+    "MUSCLE_STRAIN_LIKE",
+    "NON_SPECIFIC_SYMPTOM_CLUSTER"
+  ],
+  "note": "Synthetic educational data only; not validated for medical diagnosis."
+}
