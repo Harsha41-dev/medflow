@@ -1,8 +1,27 @@
 # MedFlow
 
+> [!IMPORTANT]
+> **Live demo link is provided in my resume.**
+
 MedFlow is a full-stack clinic and EHR-style management system built with Spring Boot, React, PostgreSQL, and a small FastAPI-based ML service. It models the everyday flow of a clinic: patients register, doctors manage appointments, clinical notes are created after visits, prescriptions are shared with patients, and important actions are recorded in audit logs.
 
 The project is meant to show practical software engineering around authentication, authorization, database design, REST APIs, UI workflows, testing, and service integration. It is not a real medical product, not clinically validated, and should only be used with synthetic demo data.
+
+## Demo Accounts
+
+All demo accounts use this password:
+
+```text
+Password123!
+```
+
+| Role | Email |
+| --- | --- |
+| Admin | `admin@medflow.demo` |
+| Doctor | `doctor.asha@medflow.demo` |
+| Doctor | `doctor.rohan@medflow.demo` |
+| Patient | `patient.priya@medflow.demo` |
+| Patient | `patient.tara@medflow.demo` |
 
 ## What The App Covers
 
@@ -174,23 +193,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ## Demo Data
 
-The backend can seed synthetic demo users and clinic data when `DEMO_DATA_SEED_ENABLED=true`.
-
-All demo accounts use:
-
-```text
-Password123!
-```
-
-Example accounts:
-
-| Role | Email |
-| --- | --- |
-| Admin | `admin@medflow.demo` |
-| Doctor | `doctor.asha@medflow.demo` |
-| Doctor | `doctor.rohan@medflow.demo` |
-| Patient | `patient.priya@medflow.demo` |
-| Patient | `patient.tara@medflow.demo` |
+The backend can seed synthetic demo users and clinic data when `DEMO_DATA_SEED_ENABLED=true`. Demo emails and the shared password are listed at the top of this README.
 
 The seed data exists only to make the local UI feel populated during demos.
 
